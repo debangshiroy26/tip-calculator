@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c, #2a2a2a);
+  color: #e0e0e0;
+}
+
+/* Calculator Card */
+.calculator {
+  background: #141414;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(0, 255, 170, 0.2);
+  width: 340px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.calculator:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px rgba(0, 255, 170, 0.4);
+}
+
+h2 {
+  margin-bottom: 25px;
+  color: #00ffaa;
+  text-shadow: 0 0 10px rgba(0, 255, 170, 0.6);
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #333;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #1f1f1f;
+  color: #e0e0e0;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border: 1px solid #00ffaa;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 255, 170, 0.7);
+}
+
+input::placeholder {
+  color: #888;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(135deg, #00ffaa, #00ddff);
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 170, 0.7);
+}
+
+/* Result */
+.result {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #00ffaa;
+  text-shadow: 0 0 10px rgba(0, 255, 170, 0.6);
+}
